@@ -178,7 +178,7 @@ public class CustomerDAOImpl implements CustomerDAO{
 			throw new LoginException("Login and password incorrect");
 		}
 	
-		String query = "SELECT login, password, idcustomer, companyname, contactname, contacttitle, address,city  "
+		String query = "SELECT  idcustomer, companyname, contactname, contacttitle, address,city, login, password  "
 				+ " FROM customers WHERE login=? AND password=?";
 	
 		Object[] params = new Object[] { login, pwd };

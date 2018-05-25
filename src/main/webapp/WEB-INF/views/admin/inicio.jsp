@@ -22,7 +22,7 @@
 					<tbody>
 						<tr>
 							<td>
-								<a href="<%=request.getContextPath()%>/admin/emp/list"
+								<a href="<%=request.getContextPath()%>/admin/menu/list"
 								class="btn btn-primary"> Manager Customer</a>
 							</td>
 							<td>

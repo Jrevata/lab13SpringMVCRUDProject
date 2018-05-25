@@ -29,13 +29,13 @@ public class LoginController {
 	@Autowired
 	private SecurityService sercurityService;
 	
-	@GetMapping("/login")
+	@GetMapping("/")
 	public ModelAndView preLogin() {
 		Customer emp = new Customer();
 		return new ModelAndView("login" , "command" , emp);
 	}
 	
-	@PostMapping("'login")
+	@PostMapping("login")
 	public ModelAndView login(@ModelAttribute("SpringWeb") Customer employee, ModelMap model) {
 		logger.info("login()");
 		logger.info(employee.toString());

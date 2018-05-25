@@ -5,12 +5,15 @@ package com.revata.apaza.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.revata.apaza.dao.CustomerDAO;
 import com.revata.apaza.exception.DAOException;
 import com.revata.apaza.exception.EmptyResultException;
 import com.revata.apaza.model.Customer;
 
+
+@Service("employeeService")
 public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired

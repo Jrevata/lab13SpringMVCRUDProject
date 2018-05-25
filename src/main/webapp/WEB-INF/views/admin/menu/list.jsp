@@ -35,7 +35,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="emp" items="${customers}">
+						<c:forEach var="emp" items="${employees}">
 							<tr>
 								<td>${emp.idcustomer}</td>
 								<td>${emp.login}</td>

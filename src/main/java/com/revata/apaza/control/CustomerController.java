@@ -15,6 +15,8 @@ import com.revata.apaza.model.Customer;
 import com.revata.apaza.services.CustomerService;
 
 
+
+
 @Controller
 public class CustomerController {
 
@@ -23,7 +25,7 @@ public class CustomerController {
 	 @Autowired
 	 private CustomerService employeeService;
 	 
-	 @GetMapping("/admin/menu")
+	 @GetMapping("/admin/inicio")
 	 public String menu() {
 		 return "/admin/inicio";
 	 }
@@ -38,7 +40,7 @@ public class CustomerController {
 			 model.addAttribute("message" , e.getMessage());
 		 }
 		 
-		 return "admin/emp/list";
+		 return "admin/menu/list";
 		 
 	 }
 	 
